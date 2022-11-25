@@ -21,7 +21,7 @@ var task = cron.schedule('* * * * *', () =>  {
         rejectUnauthorized: false
     });
 
-    axios.get('https://starrajshree.test/godsama/Admin/cron.php', { httpsAgent: agent })
+    axios.get('https://game.test/job/mainCron.php', { httpsAgent: agent })
         .then(function (response) {
             // handle success
             console.log(response.data);
